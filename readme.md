@@ -1,5 +1,7 @@
 # DEWAN_CHUNG_KWO Lighting Infromation
 
+![alt text](DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg)
+
 ## Avolites & ART-NET Device
 |             | Avolites    |  ART_NET    |
 | ----------- | ----------- | -------------- |
