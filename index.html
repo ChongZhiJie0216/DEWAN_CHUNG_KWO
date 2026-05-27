@@ -26,9 +26,10 @@
             </div>
             <div class="nav-links">
                 <a href="#overview">Overview</a>
-                <a href="#patch">Patch View</a>
-                <a href="#layout">Layout</a>
                 <a href="#personalities">Personalities</a>
+                <a href="#layout">Layout</a>
+                <a href="#patch">Patch View</a>
+                <a href="HTMLReport.html" target="_blank" class="nav-highlight">Original Report <i data-lucide="external-link" style="width: 14px; height: 14px; vertical-align: middle;"></i></a>
             </div>
         </div>
     </nav>
@@ -67,60 +68,7 @@
             </div>
         </header>
 
-        <section id="patch" class="patch-section slide-up">
-            <div class="section-header">
-                <h2>Patch View</h2>
-                <div class="search-bar glass">
-                    <i data-lucide="search"></i>
-                    <input type="text" id="searchInput" placeholder="Search fixtures by Legend or Mode...">
-                </div>
-            </div>
-
-            <div class="table-container glass">
-                <table id="patchTable">
-                    <thead>
-                        <tr>
-                            <th data-sort="userNo">User No. <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="fixture">Fixture <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="mode">Mode <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="universe">Universe <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="address">Address <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="legend">Legend <i data-lucide="chevrons-up-down"></i></th>
-                            <th data-sort="location">Location <i data-lucide="chevrons-up-down"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        <!-- Populated by script.js -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section id="layout" class="layout-section slide-up delay-1">
-            <div class="section-header">
-                <h2>Lighting Layout</h2>
-            </div>
-            <div class="layout-grid">
-                <div class="layout-card glass">
-                    <img src="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" alt="Lighting Layout Diagram" loading="lazy">
-                    <div class="card-footer">
-                        <span>Main Layout Diagram</span>
-                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" target="_blank" class="btn-primary">View Full <i data-lucide="external-link"></i></a>
-                    </div>
-                </div>
-                <div class="layout-card glass">
-                    <div class="doc-icon">
-                        <i data-lucide="file-text"></i>
-                    </div>
-                    <div class="card-footer">
-                        <span>Original PDF Plan</span>
-                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT.pdf" target="_blank" class="btn-primary">Download PDF <i data-lucide="download"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="personalities" class="personalities-section slide-up delay-2">
+        <section id="personalities" class="personalities-section slide-up">
             <div class="section-header">
                 <h2>Fixture Personalities</h2>
             </div>
@@ -165,6 +113,59 @@
                     </div>
                     <a href="Personalities/DEWAN_CHUNG_KWO_RGB_4_DMX.d4" download class="btn-primary">Download</a>
                 </div>
+            </div>
+        </section>
+
+        <section id="layout" class="layout-section slide-up delay-1">
+            <div class="section-header">
+                <h2>Lighting Layout</h2>
+            </div>
+            <div class="layout-grid">
+                <div class="layout-card glass">
+                    <img src="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" alt="Lighting Layout Diagram" loading="lazy">
+                    <div class="card-footer">
+                        <span>Main Layout Diagram</span>
+                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" target="_blank" class="btn-primary">View Full <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <div class="layout-card glass">
+                    <div class="doc-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="card-footer">
+                        <span>Original PDF Plan</span>
+                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT.pdf" target="_blank" class="btn-primary">Download PDF <i data-lucide="download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="patch" class="patch-section slide-up delay-2">
+            <div class="section-header">
+                <h2>Patch View</h2>
+                <div class="search-bar glass">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="searchInput" placeholder="Search fixtures by Legend or Mode...">
+                </div>
+            </div>
+
+            <div class="table-container glass">
+                <table id="patchTable">
+                    <thead>
+                        <tr>
+                            <th data-sort="userNo">User No. <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="fixture">Fixture <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="mode">Mode <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="universe">Universe <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="address">Address <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="legend">Legend <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="location">Location <i data-lucide="chevrons-up-down"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Populated by script.js -->
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
