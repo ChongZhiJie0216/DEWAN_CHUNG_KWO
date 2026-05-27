@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const headers = document.querySelectorAll('th[data-sort]');
     
     const enhancedData = patchData.map(fixture => {
-        const universe = parseInt(fixture.address.split('.')[0]) || 0;
+        let universe = parseInt(fixture.address.split('.')[0]) || 0;
+        if (universe > 0) universe -= 1;
         return { ...fixture, universe };
     });
     
