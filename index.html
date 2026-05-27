@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DEWAN CHUNG KWO - Lighting Patch & Network Information">
+    <title>DEWAN CHUNG KWO | Lighting Info</title>
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow blur-cyan"></div>
+    <div class="bg-glow blur-magenta"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i data-lucide="lightbulb"></i>
+                <span>DEWAN CHUNG KWO</span>
+            </div>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#patch">Patch View</a>
+                <a href="#layout">Layout</a>
+                <a href="#personalities">Personalities</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="overview" class="hero fade-in">
+            <div class="hero-content">
+                <h1>Lighting <span>Dashboard</span></h1>
+                <p class="subtitle">Complete patch and network infrastructure for the DEWAN CHUNG KWO show.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <i data-lucide="calendar"></i>
+                    <h3>Date</h3>
+                    <p>14/12/25 - 15:39</p>
+                </div>
+                <div class="stat-card glass">
+                    <i data-lucide="server"></i>
+                    <h3>Console</h3>
+                    <p>QTZ-58588 (Quartz)</p>
+                    <small>Version: 16.0.670.5</small>
+                </div>
+                <div class="stat-card glass">
+                    <i data-lucide="network"></i>
+                    <h3>Avolites IP</h3>
+                    <p>10.119.220.204</p>
+                    <small>Subnet: 255.0.0.0</small>
+                </div>
+                <div class="stat-card glass">
+                    <i data-lucide="activity"></i>
+                    <h3>ART-NET IP</h3>
+                    <p>10.201.006.100</p>
+                    <small>Subnet: 255.0.0.0</small>
+                </div>
+            </div>
+        </header>
+
+        <section id="patch" class="patch-section slide-up">
+            <div class="section-header">
+                <h2>Patch View</h2>
+                <div class="search-bar glass">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="searchInput" placeholder="Search fixtures by Legend or Mode...">
+                </div>
+            </div>
+
+            <div class="table-container glass">
+                <table id="patchTable">
+                    <thead>
+                        <tr>
+                            <th data-sort="userNo">User No. <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="fixture">Fixture <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="mode">Mode <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="universe">Universe <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="address">Address <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="legend">Legend <i data-lucide="chevrons-up-down"></i></th>
+                            <th data-sort="location">Location <i data-lucide="chevrons-up-down"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Populated by script.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="layout" class="layout-section slide-up delay-1">
+            <div class="section-header">
+                <h2>Lighting Layout</h2>
+            </div>
+            <div class="layout-grid">
+                <div class="layout-card glass">
+                    <img src="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" alt="Lighting Layout Diagram" loading="lazy">
+                    <div class="card-footer">
+                        <span>Main Layout Diagram</span>
+                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT-1-1.jpg" target="_blank" class="btn-primary">View Full <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <div class="layout-card glass">
+                    <div class="doc-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="card-footer">
+                        <span>Original PDF Plan</span>
+                        <a href="DEWAN_CHUNG_KWO_LIGHT_LAY_OUT.pdf" target="_blank" class="btn-primary">Download PDF <i data-lucide="download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="personalities" class="personalities-section slide-up delay-2">
+            <div class="section-header">
+                <h2>Fixture Personalities</h2>
+            </div>
+            <p class="subtitle" style="text-align: left; margin: 0 0 2rem 0; font-size: 1rem;">Download Avolites (.d4) fixture personalities for this show.</p>
+            <div class="personalities-grid">
+                <div class="personality-card glass">
+                    <div class="card-icon"><i data-lucide="download-cloud"></i></div>
+                    <div class="card-content">
+                        <h3>B-EYE K10</h3>
+                    </div>
+                    <a href="Personalities/DEWAN_CHUNG_KWO_ALS_B-EYE_K10.d4" download class="btn-primary">Download</a>
+                </div>
+                
+                <div class="personality-card glass">
+                    <div class="card-icon"><i data-lucide="download-cloud"></i></div>
+                    <div class="card-content">
+                        <h3>ALS 5403RGBW2</h3>
+                    </div>
+                    <a href="Personalities/DEWAN_CHUNG_KWO_ALS_B-EYE_K10_ALS_5403RGBW2.d4" download class="btn-primary">Download</a>
+                </div>
+
+                <div class="personality-card glass">
+                    <div class="card-icon"><i data-lucide="download-cloud"></i></div>
+                    <div class="card-content">
+                        <h3>LuminaB300</h3>
+                    </div>
+                    <a href="Personalities/DEWAN_CHUNG_KWO_ALS_LuminaB300.d4" download class="btn-primary">Download</a>
+                </div>
+
+                <div class="personality-card glass">
+                    <div class="card-icon"><i data-lucide="download-cloud"></i></div>
+                    <div class="card-content">
+                        <h3>P600 CTO</h3>
+                    </div>
+                    <a href="Personalities/DEWAN_CHUNG_KWO_P600_CTO.d4" download class="btn-primary">Download</a>
+                </div>
+
+                <div class="personality-card glass">
+                    <div class="card-icon"><i data-lucide="download-cloud"></i></div>
+                    <div class="card-content">
+                        <h3>RGB 4 DMX</h3>
+                    </div>
+                    <a href="Personalities/DEWAN_CHUNG_KWO_RGB_4_DMX.d4" download class="btn-primary">Download</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 DEWAN CHUNG KWO. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Data and Logic -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
